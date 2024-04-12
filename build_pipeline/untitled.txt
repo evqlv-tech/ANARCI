@@ -1,0 +1,1 @@
+muscle -in /home/jupyter/ANARCI/build_pipeline/./muscle_alignments/all_js.fasta -gapopen -10 -out /home/jupyter/ANARCI/build_pipeline/./muscle_alignments/all_js_aligned.fasta

@@ -11,6 +11,19 @@ Contact: opig@stats.ox.ac.uk
 
 ```
 
+# EVQLV Notes:
+If you encounter an error regarding missing ALL.hmm, muscle3 has not been run due to some kind of error. The easiest solution is to copy the
+static alignment file into the right build directory.
+
+cp all_js_aligned.fasta /home/jupyter/ANARCI/build_pipeline/./muscle_alignments/
+
+
+
+
+
+
+
+
 # Usage:
 
 * Numbering a single sequence
