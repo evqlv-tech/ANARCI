@@ -14,6 +14,11 @@ class CustomInstallCommand(install):
        shutil.copy('bin/ANARCI', ANARCI_BIN) # copy ANARCI executable
        print("INFO: ANARCI lives in: ", ANARCI_LOC) 
 
+       # stage muscle alignments for build
+       # TODO: make this less hacky
+       os.makedirs("build_pipeline/muscle_alignments", exist_ok=True)
+       shutil.copy("all_js_aligned.fasta", "build_pipeline/muscle_alignments")
+
        # Build HMMs from IMGT germlines
        os.chdir("build_pipeline")
        print('INFO: Downloading germlines from IMGT and building HMMs...')
